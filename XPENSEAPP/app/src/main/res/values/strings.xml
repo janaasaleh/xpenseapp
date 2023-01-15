@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">XPENSE APP</string>
+    <string name="checkbox">com.example.xpenseapp</string>
+    <string name="username">com.example.xpenseapp</string>
+    <string name="password">com.example.xpenseapp</string>
+
+</resources>
