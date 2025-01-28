@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="50dp"
+    android:orientation="vertical"
+    tools:context=".Profile">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="130dp"
+        android:layout_weight="1"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/profile"
+        tools:ignore="MissingConstraints" />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/first"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="60dp"
+            android:textSize="30dp"
+            android:layout_marginRight="3dp"
+            android:textColor="@color/black"
+            android:text="Name: " />
+
+        <TextView
+            android:id="@+id/firstedit"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="52dp"
+            android:layout_height="33dp"
+            android:textSize="30dp"
+            android:textColor="@color/black"
+            android:text="Name: "
+            tools:ignore="SpeakableTextPresentCheck" />
+
+    </LinearLayout>
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginTop="20dp"-->
+    <!--        android:layout_marginLeft="30dp"-->
+    <!--        android:orientation="horizontal">-->
+    <!--        <TextView-->
+    <!--            android:id="@+id/last"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_gravity="center"-->
+    <!--            android:textStyle="bold"-->
+    <!--            android:layout_marginRight="5dp"-->
+    <!--            android:textColor="@color/black"-->
+    <!--            android:text="Last name" />-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/lastedit"-->
+    <!--            android:layout_width="101dp"-->
+    <!--            android:layout_height="33dp"-->
+    <!--            tools:ignore="SpeakableTextPresentCheck" />-->
+    <!--    </LinearLayout>-->
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginTop="20dp"-->
+    <!--        android:layout_marginLeft="30dp"-->
+    <!--        android:orientation="horizontal">-->
+    <!--    <TextView-->
+    <!--        android:id="@+id/userprofile"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="Username"-->
+    <!--        android:layout_marginRight="5dp"-->
+    <!--        android:textColor="@color/black"-->
+    <!--        android:textStyle="bold" />-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/user"-->
+    <!--            android:layout_width="101dp"-->
+    <!--            android:gravity="center"-->
+    <!--            android:layout_height="33dp"-->
+    <!--            tools:ignore="SpeakableTextPresentCheck" />-->
+    <!--    </LinearLayout>-->
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="90dp"
+        app:cardCornerRadius="10dp"
+        android:layout_marginBottom="50dp"
+        app:cardElevation="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="166dp"
+            android:layout_gravity="center"
+            android:background="@drawable/colorgrad">
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="hey"
+                    android:id="@+id/hey"
+                    android:textAllCaps="true"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold|italic"
+                    android:textSize="20dp"/>
+                <TextView
+                    android:id="@+id/usernamedisp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAllCaps="true"
+                    android:text="user"
+                    android:textColor="@color/purple_700"
+                    android:textStyle="bold|italic"
+                    android:layout_marginRight="10dp"
+                    android:textSize="20dp"/>
+                <TextView
+                    android:id="@+id/exclam"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAllCaps="true"
+                    android:text=":)"
+                    android:textColor="@color/black"
+                    android:textStyle="bold|italic"
+                    android:textSize="20dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:outlineSpotShadowColor="@color/black"
+        app:itemIconTint="@color/black"
+        app:itemTextColor="#0C0B0B"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/navigation_bar" />
+
+
+</LinearLayout>
